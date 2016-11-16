@@ -159,6 +159,11 @@ private char math_operator;
         jButton1.setText("+/-");
 
         cmdsmdengan.setText("=");
+        cmdsmdengan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdsmdenganActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -330,6 +335,25 @@ private char math_operator;
          String button_text = cmdtambah.getText();
         getOperator(button_text);
     }//GEN-LAST:event_cmdtambahActionPerformed
+
+    private void cmdsmdenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdsmdenganActionPerformed
+         switch (math_operator){
+            case '+':
+            angka2 = angka1 + Double.parseDouble(text1.getText( ) );
+            break;
+            case '-':
+            angka2 = angka1 - Double.parseDouble(text1.getText( ) );
+            break;
+            case '*':
+            angka2 = angka1 * Double.parseDouble(text1.getText( ) );
+            break;
+            case '/':
+            angka2 = angka1 / Double.parseDouble(text1.getText( ) );
+            break;
+        }
+        text1.setText( Double.toString(angka2) );
+        angka1 = 0;
+    }//GEN-LAST:event_cmdsmdenganActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
