@@ -193,7 +193,8 @@ private char math_operator;
     }//GEN-LAST:event_cmdkurangActionPerformed
 
     private void cmd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd1ActionPerformed
-
+    String cmd1Text = text1.getText() + cmd1.getText();
+        text1.setText( cmd1Text );
     }//GEN-LAST:event_cmd1ActionPerformed
 
     private void text1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text1ActionPerformed
@@ -201,11 +202,13 @@ private char math_operator;
     }//GEN-LAST:event_text1ActionPerformed
 
     private void cmd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd2ActionPerformed
-      
+    String cmd2Text = text1.getText() + cmd2.getText();
+        text1.setText( cmd2Text );
     }//GEN-LAST:event_cmd2ActionPerformed
 
     private void cmd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd3ActionPerformed
-        
+    String cmd3Text = text1.getText() + cmd3.getText();
+        text1.setText( cmd3Text );
     }//GEN-LAST:event_cmd3ActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
