@@ -115,10 +115,25 @@ private char math_operator;
         });
 
         cmdkoma.setText(".");
+        cmdkoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdkomaActionPerformed(evt);
+            }
+        });
 
         cmdclear.setText("C");
+        cmdclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdclearActionPerformed(evt);
+            }
+        });
 
         cmdbagi.setText("/");
+        cmdbagi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdbagiActionPerformed(evt);
+            }
+        });
 
         cmdkali.setText("*");
 
@@ -280,6 +295,19 @@ private char math_operator;
        String cmd0Text = text1.getText() + cmd8.getText();
         text1.setText( cmd0Text );
     }//GEN-LAST:event_cmd0ActionPerformed
+
+    private void cmdkomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdkomaActionPerformed
+       
+    }//GEN-LAST:event_cmdkomaActionPerformed
+
+    private void cmdclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdclearActionPerformed
+        angka2 = 0;
+        text1.setText("");
+    }//GEN-LAST:event_cmdclearActionPerformed
+
+    private void cmdbagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdbagiActionPerformed
+       
+    }//GEN-LAST:event_cmdbagiActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
