@@ -189,16 +189,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmd8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cmd9">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmd9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cmd0">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmd0ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cmdkoma">
       <Properties>

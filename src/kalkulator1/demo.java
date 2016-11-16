@@ -94,10 +94,25 @@ private char math_operator;
         });
 
         cmd8.setText("8");
+        cmd8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd8ActionPerformed(evt);
+            }
+        });
 
         cmd9.setText("9");
+        cmd9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd9ActionPerformed(evt);
+            }
+        });
 
         cmd0.setText("0");
+        cmd0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd0ActionPerformed(evt);
+            }
+        });
 
         cmdkoma.setText(".");
 
@@ -250,6 +265,21 @@ private char math_operator;
      String cmd7Text = text1.getText() + cmd7.getText();
         text1.setText( cmd7Text );
     }//GEN-LAST:event_cmd7ActionPerformed
+
+    private void cmd8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd8ActionPerformed
+       String cmd8Text = text1.getText() + cmd8.getText();
+        text1.setText( cmd8Text );
+    }//GEN-LAST:event_cmd8ActionPerformed
+
+    private void cmd9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd9ActionPerformed
+       String cmd9Text = text1.getText() + cmd8.getText();
+        text1.setText( cmd9Text );
+    }//GEN-LAST:event_cmd9ActionPerformed
+
+    private void cmd0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd0ActionPerformed
+       String cmd0Text = text1.getText() + cmd8.getText();
+        text1.setText( cmd0Text );
+    }//GEN-LAST:event_cmd0ActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
