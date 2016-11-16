@@ -306,7 +306,8 @@ private char math_operator;
     }//GEN-LAST:event_cmdclearActionPerformed
 
     private void cmdbagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdbagiActionPerformed
-       
+       String button_text = cmdbagi.getText();
+        getOperator(button_text);
     }//GEN-LAST:event_cmdbagiActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
