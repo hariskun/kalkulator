@@ -173,11 +173,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmd6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cmd7">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmd7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cmd8">
       <Properties>

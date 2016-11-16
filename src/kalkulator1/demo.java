@@ -80,8 +80,18 @@ private char math_operator;
         });
 
         cmd6.setText("6");
+        cmd6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd6ActionPerformed(evt);
+            }
+        });
 
         cmd7.setText("7");
+        cmd7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmd7ActionPerformed(evt);
+            }
+        });
 
         cmd8.setText("8");
 
@@ -230,6 +240,16 @@ private char math_operator;
     String cmd5Text = text1.getText() + cmd5.getText();
         text1.setText( cmd5Text );
     }//GEN-LAST:event_cmd5ActionPerformed
+
+    private void cmd6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd6ActionPerformed
+       String cmd6Text = text1.getText() + cmd6.getText();
+        text1.setText( cmd6Text );
+    }//GEN-LAST:event_cmd6ActionPerformed
+
+    private void cmd7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd7ActionPerformed
+     String cmd7Text = text1.getText() + cmd7.getText();
+        text1.setText( cmd7Text );
+    }//GEN-LAST:event_cmd7ActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
