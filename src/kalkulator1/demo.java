@@ -150,6 +150,11 @@ private char math_operator;
         });
 
         cmdtambah.setText("+");
+        cmdtambah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdtambahActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("+/-");
 
@@ -320,6 +325,11 @@ private char math_operator;
        String button_text = cmdkali.getText();
         getOperator(button_text); 
     }//GEN-LAST:event_cmdkaliActionPerformed
+
+    private void cmdtambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdtambahActionPerformed
+         String button_text = cmdtambah.getText();
+        getOperator(button_text);
+    }//GEN-LAST:event_cmdtambahActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
