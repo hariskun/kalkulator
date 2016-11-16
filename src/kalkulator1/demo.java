@@ -136,6 +136,11 @@ private char math_operator;
         });
 
         cmdkali.setText("*");
+        cmdkali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdkaliActionPerformed(evt);
+            }
+        });
 
         cmdkurang.setText("-");
         cmdkurang.addActionListener(new java.awt.event.ActionListener() {
@@ -309,6 +314,11 @@ private char math_operator;
        String button_text = cmdbagi.getText();
         getOperator(button_text);
     }//GEN-LAST:event_cmdbagiActionPerformed
+
+    private void cmdkaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdkaliActionPerformed
+       String button_text = cmdkali.getText();
+        getOperator(button_text); 
+    }//GEN-LAST:event_cmdkaliActionPerformed
     private void getOperator(String btnText){
          math_operator = btnText.charAt(0);
      angka1 = angka1 + Double.parseDouble(text1.getText());
