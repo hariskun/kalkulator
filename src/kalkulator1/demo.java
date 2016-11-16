@@ -244,7 +244,8 @@ private char math_operator;
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmdkurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdkurangActionPerformed
-        // TODO add your handling code here:
+       String button_text = cmdkurang.getText();
+        getOperator(button_text);
     }//GEN-LAST:event_cmdkurangActionPerformed
 
     private void cmd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmd1ActionPerformed
